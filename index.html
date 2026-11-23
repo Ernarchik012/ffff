@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Моё портфолио</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <img class="avatar" src="image/a-man.avif" alt="Аватар">
+    <h1>Джаналинов Ернар</h1>
+    <p class="subtitle">Студент · начинающий веб-разработчик</p>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>Обо мне</h2>
+      <p>Меня зовут Ернар, я учусь в колледже на специальности «Разработчик программного обеспечение». Увлекаюсь веб-разработкой и дизайном интерфейсов. Хочу создавать удобные и красивые сайты.</p>
+    </section>
+
+    <section class="card">
+      <h2>Мои навыки</h2>
+      <ul class="skills">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript (основы)</li>
+        <li>Figma</li>
+        <li>Git</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Мои увлечения</h2>
+      <ul class="hobbies">
+        <li>Рисование</li>
+        <li>Чтение книг</li>
+        <li>Путешествия</li>
+        <li>Фотография</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Контакты</h2>
+      <p>Email: ernar@example.com</p>
+      <p>Телефон: +7 (700) 000-00-00</p>
+      <p>Город: Кокшетау</p>
+      <button class="btn" id="contactBtn">Связаться со мной</button>
+      <p class="message" id="message"></p>
+    </section>
+  </main>
+
+  <footer class="footer">© 2026 Джаналинов Ернар</footer>
+
+  <script>
+    document.getElementById('contactBtn').addEventListener('click', function () {
+      document.getElementById('message').textContent =
+        'Спасибо! Я отвечу вам в ближайшее время.';
+    });
+  </script>
+</body>
+</html>

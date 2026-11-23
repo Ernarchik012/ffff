@@ -1,0 +1,98 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background-color: #eef3f8;
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #243447;
+}
+
+.header {
+  background-color: #2f5d8a;
+  color: #fff;
+  text-align: center;
+  padding: 40px 20px;
+}
+.header h1 { margin: 16px 0 4px; font-size: 36px; }
+.subtitle { margin: 0; font-size: 18px; opacity: .85; }
+
+.avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  object-fit: cover;
+}
+
+.container {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+.card {
+  background-color: #fff;
+  border: 1px solid #d5e0ec;
+  border-radius: 14px;
+  padding: 24px;
+  margin-bottom: 20px;
+  transition: transform .25s, box-shadow .25s;
+}
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(47, 93, 138, .18);
+}
+.card h2 {
+  margin: 0 0 12px;
+  font-size: 24px;
+  color: #2f5d8a;
+}
+
+.skills, .hobbies {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.skills li {
+  background-color: #dbe9f6;
+  border-radius: 20px;
+  padding: 6px 16px;
+  transition: background-color .2s, color .2s;
+}
+.skills li:hover { background-color: #2f5d8a; color: #fff; }
+
+.hobbies li {
+  background-color: #fdeccf;
+  border-radius: 20px;
+  padding: 6px 16px;
+  transition: background-color .2s;
+}
+.hobbies li:hover { background-color: #f7c873; }
+
+.btn {
+  margin-top: 12px;
+  padding: 12px 28px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  background-color: #e8743b;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color .2s, transform .2s;
+}
+.btn:hover { background-color: #c95d28; transform: scale(1.05); }
+.btn:active { transform: scale(.98); }
+
+.message { color: #1f8a4c; font-weight: 600; }
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  color: #5b6b7c;
+}
